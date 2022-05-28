@@ -1,0 +1,28 @@
+pipeline {
+    agent any
+    
+    // parms:
+    // 1. input for custom deployment name
+    // 2. select to deploy to [EU-WEST-2A, EU-WEST-2B, EU-WEST-2C]
+    // 3. checkbox to confirm deployment
+
+    parameters {
+        string(name: "deploymentName",
+               description: "deployment name").
+        choice(name: "deployTarget",
+               choices: ["EU-WEST-2A", "EU-WEST-2B", "EU-WEST-2C"],
+               description: "select to deploy to" ),
+        booleanParam(name: "confirmDeployment",
+                     defaultValue: false)
+    }
+
+    stages {
+        stage("deploy") {
+            steps {
+                echo "deployName- ${deployName} "
+                echo "deployTarget- ${deployTarget}"
+                echo "confirmDeployment- ${confirmDeployment} "
+            }
+        }
+    }
+}

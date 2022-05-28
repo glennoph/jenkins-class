@@ -1,0 +1,14 @@
+pipeline {
+    // parms:
+    // 1. input for custom deployment name
+    // 2. select to deploy to [EU-WEST-2A, EU-WEST-2B, EU-WEST-2C]
+    // 3. checkbox to confirm deployment
+
+    parameters {
+        string(name: "deploymentName",
+               description: "custom deployment name").
+        
+    }
+
+
+}
