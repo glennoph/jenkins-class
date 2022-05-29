@@ -1,13 +1,11 @@
 pipeline {
     agent any
     stages {
-        stage('clean up') {
-            steps {
-                deleteDir()
-            }
-        }
         stage('clone repo') {
             steps {
+                echo 'delete dir'
+                deleteDir()
+                echo 'clone repo'
                 sh 'git clone https://github.com/jenkins-docs/simple-java-maven-app.git'
             }
         }
@@ -27,4 +25,3 @@ pipeline {
         }
     }
 }
-

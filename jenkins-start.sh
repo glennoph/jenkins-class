@@ -1,5 +1,7 @@
 #!/bin/bash
-echo 'jenkins-start docker image name jenins_local'
+echo 'jenkins-start docker image name jenkins-local'
 
-docker run -d --name jenkins_local jenkins_local
+echo 'browser- localhost:8080'
+
+docker start  jenkins-local
 

@@ -1,0 +1,12 @@
+// challenge-1
+pipeline {
+    agent any
+    
+    stages {
+        stage('stage-1') {
+            steps {
+                echo "hello from challenge 1"
+            }
+        }
+    }
+}

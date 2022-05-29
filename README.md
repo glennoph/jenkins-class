@@ -15,4 +15,24 @@ see [Dockerfile](./Dockerfile)
 4. enter admin pw
 
 
+## cron 
 
+* (crontab.guru)[crontab.guru]
+
+## groovy
+* (groovy-lang)[groovy-lang.org]
+
+## Plugins
+### blue ocean
+
+Common API for Blue Ocean
+Version1.25.5
+
+This plugin is a part of Blue Ocean UI
+
+### Embeddable Build Status Plugin 
+
+Embeddable Build Status Plugin
+Version2.0.3
+
+This plugin adds the embeddable build status badge to Jenkins so that you can easily hyperlink/show your build status from elsewhere.
